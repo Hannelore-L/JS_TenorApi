@@ -1,14 +1,9 @@
 import React from 'react';
 export default ( { gifs } ) => (
      <>
-          <p>resultaat van opzoeking</p>
-          <ul>
-               { gifs.map( ( gif ) => (
-                    <>
-                         <p>{ gif }</p>
-                         <img src={ gif.media.tinygif.url } key={ gif.id } />
-                    </>
-               ) ) }
-          </ul>
+          <p>Serving you your GIFs:</p>
+          { gifs.map( ( gif ) => (
+               <img src={ gif.media[ 0 ].tinygif.url } key={ gif.id } />
+          ) ) }
      </>
 );

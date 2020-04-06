@@ -38,7 +38,7 @@ export default class props extends React.Component {
                          error: false
                     }
                } );
-               this.props.summonTheGifs( this.state.mood.value );
+               this.props.summonGifs( this.state.mood.value );
           };
      }; // end of submitField()
 
@@ -54,6 +54,6 @@ export default class props extends React.Component {
                     />
                     <input type="submit" value="Gimme the GIFs!" />
                </form>
-          )
-     }
+          );
+     };
 };

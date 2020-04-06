@@ -50,5 +50,5 @@ export default class App extends Component {
                     ) }
                </div>
           );
-     }
+     }; // end of render
 } // end of App class
